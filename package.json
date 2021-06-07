@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "nodemon",
     "start:dev": "ts-node src/index.ts",
-    "start": "node dist/src/index.js",
-    "build": "rimraf dist && tsc",
+    "start": "node build/src/index.js",
+    "build": "rimraf build && tsc",
     "postinstall": "npm run build"
   },
   "keywords": [],
