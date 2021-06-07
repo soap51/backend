@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "nodemon",
     "start": "ts-node src/index.ts",
-    "build": "tsc -p ."
+    "build": "rimraf dist && tsc",
+    "postinstall": "npm run build"
   },
   "keywords": [],
   "author": "",
