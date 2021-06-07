@@ -28,5 +28,8 @@ app.use(express.urlencoded({extended : false}))
 app.use(express.json())
 app.use('/api',route);
 
+const http = require('http');
 
-app.listen(port)
+const server = http.createServer(app);
+
+server.listen(port)
